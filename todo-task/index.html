@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div class="row">
+        <div class="container-fluid">
+            <section class="app-section-container">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Todo App</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-lg-offset-3">
+                                        <div class="hidden" role="alert" id="alert-message"><h4 style="margin-bottom:0;"></h4></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Your Task.." id="app-todo-text">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button" id="app-todo-btn" onclick="onBtnClick()">Create</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden" id="list-container">
+                                <h4>My List</h4>
+                                <ul id="app-todo-list" class="list-group " >
+    
+                                </ul>
+                            </div>
+                            <div style="margin:15px 0" id="alert-container">
+                                <div class="alert alert-danger" role="alert"> <strong>Oh!</strong> List is Empty </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

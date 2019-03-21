@@ -1,0 +1,26 @@
+.app-section-container{
+    margin: 150px 0;
+}
+
+#app-todo-list{
+    padding: 0;    
+}
+
+
+.list-title{
+    margin: 0;
+}
+
+.action-links{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+}
+.action-links span{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.list-group-item:hover > .action-links{
+    opacity: 1;
+    visibility: visible;
+}
